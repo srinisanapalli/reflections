@@ -1,13 +1,29 @@
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
+Staging area is an intermediate step for commits between local changes and repositories. It helps with deicisions when one wants to commit or undo the changes made to local. By having the staging area, it is easier to manage these without committing in to the repository. 
+
 How can you use the staging area to make sure you have one commit per logical change?
+
+using git add and then reviewing these using git status - can also run git diff to view changes between local and staging
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
+bug fixes, new features, exploratory work, anything that is not production relevant should ideally be in branches. branches help organise code related to these and isolate the work without impacting others work.
+
 How do the diagrams help you visualize the branch structure?
+
+I can see the reachability of master and various branches with the visualisation of the branch structure.
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
+Result is that code changes are merged in to one branch and that the history of the commits is retained to ensure reachability and ability to switch to a previous commit.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 
+Pros
+automated hence no manual intervention from the devs
+if no major losses due to automatic merging, that works great and saves time
+
+Cons
+Merging conflicts are at time difficult and complex and require communication between the 2 devs/teams to ensure the right resolution is taken hence an automatic merge may not be the right solution
 
